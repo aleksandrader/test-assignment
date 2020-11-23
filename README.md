@@ -21,7 +21,7 @@ Corespondents to "id" in the source data.
 
 Default value: 1
 
-# depth
+### depth
 Defines how many steps up or down should be taken.
 Take this as "render radius", by tae into account direction.
 
@@ -30,14 +30,14 @@ as it is defined in "depth".
 b) When direction is "up", go "up" as many steps as defined in "depth",
 and render from that node down using "depth" value, same as a).
 
-# direction
+### direction
 Defines direction of tree traversal. See "depth", for details.
 
 NB! --up --down can be used together. 
 
 Default value: --down
 
-# format
+### format
 Result output format.
 
 --csv renders in source format into console (csv without header):
@@ -47,7 +47,7 @@ id (int), parent (int), full name
 
 Default value: --tree 
 
-Examples:
+## Examples
 
 $ python tree.py
 Renders 10 nodes down starting from 1 in ascitree format.
