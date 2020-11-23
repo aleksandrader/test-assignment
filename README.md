@@ -5,7 +5,8 @@
 
 There is family-tree.csv with 999999 records.
 data format is following:
-id (int), parent (int), full name
+
+`id (int), parent (int), full name`
 
 ## Task
 
