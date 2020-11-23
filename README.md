@@ -11,7 +11,7 @@ id (int), parent (int), full name
 
 We need to create utility that renders subtree.
 
-$ python tree.py [start_id] [depth] [--up/--down] [--tree/--csv]
+`$ python tree.py [start_id] [depth] [--up/--down] [--tree/--csv]`
 
 All arguments are optional.
 
@@ -49,12 +49,15 @@ Default value: --tree
 
 ## Examples
 
-$ python tree.py
+`$ python tree.py`
+
 Renders 10 nodes down starting from 1 in ascitree format.
 
-$ python tree.py 1001 100 --csv
+`$ python tree.py 1001 100 --csv`
+
 Renders 10 nodes down starting from 1001 in csv format.
 
-$ python tree.py 1001 100 --up --down --csv
+`$ python tree.py 1001 100 --up --down --csv`
+
 Renders 10 nodes up and down starting from 1001 in csv format.
  
