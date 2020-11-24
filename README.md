@@ -6,15 +6,18 @@
 There is family-tree.csv with 999999 records.
 data format is following:
 
-`id (int), parent (int), full name`
+`id (int), parent (int), full name (unquoted string)`
 
 ## Task
 
 We need to create utility that renders subtree.
 
-`$ python tree.py [start_id] [depth] [--up/--down] [--tree/--csv]`
+`$ python tree.py {file_name} [start_id] [depth] [--up/--down] [--tree/--csv]`
 
-All arguments are optional.
+All arguments are optional, except file name.
+
+### file_name
+Name of the file to use. Relative to current directory or absolute.
 
 ### start_id
 This is position where the new subtree starts.
@@ -50,15 +53,15 @@ Default value: --tree
 
 ## Examples
 
-`$ python tree.py`
+`$ python tree.py family-tree.csv`
 
 Renders 10 nodes down starting from 1 in ascitree format.
 
-`$ python tree.py 1001 100 --csv`
+`$ python tree.py family-tree.csv 1001 100 --csv`
 
 Renders 10 nodes down starting from 1001 in csv format.
 
-`$ python tree.py 1001 100 --up --down --csv`
+`$ python tree.py family-tree.csv 1001 100 --up --down --csv`
 
 Renders 10 nodes up and down starting from 1001 in csv format.
  
