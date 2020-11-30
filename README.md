@@ -34,6 +34,8 @@ as it is defined in "depth".
 b) When direction is "up", go "up" as many steps as defined in "depth",
 and render from that node down using "depth" value, same as a).
 
+Default value: 5    
+
 ### direction
 Defines direction of tree traversal. See "depth", for details.
 
