@@ -57,13 +57,13 @@ Default value: --tree
 
 `$ python tree.py family-tree.csv`
 
-Renders 10 nodes down starting from 1 in ascitree format.
+Renders 5 nodes down starting from 1 in ascitree format.
 
 `$ python tree.py family-tree.csv 1001 100 --csv`
 
-Renders 10 nodes down starting from 1001 in csv format.
+Renders 100 nodes down starting from 1001 in csv format.
 
 `$ python tree.py family-tree.csv 1001 100 --up --down --csv`
 
-Renders 10 nodes up and down starting from 1001 in csv format.
+Renders 100 nodes up and down starting from 1001 in csv format.
  
